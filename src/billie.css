@@ -1,0 +1,134 @@
+.billie--tooltip__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.billie--tooltip__close svg {
+  fill: #ccc;
+}
+
+.billie--tooltip__close:hover svg {
+  background: #f4f4f4;
+  border-radius: 100%;
+  fill: rgb(136, 136, 136);
+}
+
+.billie--tooltip {
+  position: absolute;
+  background-color: #fafafa;
+  color: #555;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 15px;
+  font-family: sans-serif;
+  max-width: 500px;
+  z-index: 25001;
+}
+
+.billie--tooltip ul {
+  margin-bottom: 0;
+}
+
+.billie--tooltip.billie--tooltip--left:after {
+  left: 2px;
+}
+
+.billie--tooltip.billie--tooltip--right:after {
+  right: 2px;
+}
+
+.billie--tooltip:after {
+  top: -6px;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22%23fafafa%22%20transform%3D%22rotate(180deg)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  transform: rotate(180deg);
+}
+
+.billie--tooltip.billie--tooltip--left:before {
+  left: 7px;
+}
+
+.billie--tooltip.billie--tooltip--right:before {
+  right: 7px;
+}
+
+.billie--tooltip:before {
+  top: -4px;
+  width: 7px;
+  height: 2px;
+  position: absolute;
+  content: "";
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.billie--tooltip__title {
+  font-weight: bold;
+  color: #333;
+}
+
+.billie--tooltip__impact svg {
+  width: 36px;
+  height: 36px;
+  margin-left: -3px;
+  margin-right: 10px;
+}
+
+.billie--message__container {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.billie--alert {
+  position: absolute;
+  border-radius: 3px;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 25000;
+}
+
+.billie--alert--critical {
+  background: rgba(219, 89, 89, 0.4);
+  border: 2px solid rgb(219, 89, 89);
+}
+
+.billie--critical svg {
+  fill: rgb(219, 89, 89);
+}
+
+.billie--alert--serious {
+  background: rgba(219, 141, 89, 0.4);
+  border: 2px solid rgb(219, 141, 89);
+}
+
+.billie--serious svg {
+  fill: rgb(219, 141, 89);
+}
+
+.billie--alert--moderate {
+  background: rgba(219, 189, 89, 0.4);
+  border: 2px solid rgb(219, 189, 89);
+}
+
+.billie--moderate svg {
+  fill: rgb(219, 189, 89);
+}
+
+.billie--alert--minor {
+  background: rgba(89, 108, 219, 0.4);
+  border: 2px solid rgb(89, 108, 219);
+}
+
+.billie--minor svg {
+  fill: rgb(89, 108, 219);
+}
