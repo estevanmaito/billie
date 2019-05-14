@@ -244,7 +244,5 @@ import "./billie.css";
     }
   });
 
-  window.addEventListener("load", function handleLoad() {
-    init();
-  });
+  init();
 })();
