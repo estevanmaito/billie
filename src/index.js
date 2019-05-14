@@ -235,8 +235,6 @@ import "./billie.css";
     });
   }
 
-  init();
-
   /**
    * Handle escape keyup event
    */
@@ -244,5 +242,9 @@ import "./billie.css";
     if (e.key === "Escape") {
       removeTooltipIfExists();
     }
+  });
+
+  window.addEventListener("load", function handleLoad() {
+    init();
   });
 })();
